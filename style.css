@@ -1,0 +1,375 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(0, 0, 0); */
+    background: linear-gradient(to bottom, #000, rgb(29, 29, 29));
+}
+@media screen and (max-width:1250px)
+{
+    .navbar{
+        display: inline-block;
+        margin-left: 20px;
+        height: 475px;
+        width: 95vw;
+        transition: 1s all ease;
+        z-index: 2 !important;
+        /* position: absolut; */
+    }
+    .log{
+        display: block !important;
+    }
+    .navbar-items {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .login{
+    visibility: hidden;
+    }
+    #icon{
+        display: block !important;
+        right: 20px;
+        position: absolute;
+        top: 20px;
+        height: 40px; 
+        width: auto;
+    }
+    .courses{
+        width: 200px !important;
+        height: 550px;
+    }
+    .course{
+        width: 340px !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+    .course .image img{
+        /* width: 300px !important; */
+        height: 175px !important;
+    }
+    .owl-stage{
+        margin-top: 30px;
+    }
+}
+.navbar.toggle{
+    height: 80px;
+    overflow: hidden;
+    transition: 0.5s all ease;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    justify-content: space-around;
+    /* background-color: rgb(41, 51, 82, 0.8); */
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 8px 8px -2px rgba(0, 0, 0, 0.2);;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-items ul{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 27px 11px;
+}
+.navbar ul:hover li a , .navbar li a.active  {
+    /* border-bottom: 2px solid rgb(255, 255, 255); */
+    /* background-color: #36aaaa; */
+    color: #36aaaa;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+    /* padding: 26px 11px; */
+    
+}
+.navbar-items li a {
+    border-radius: 5px;
+    padding: 4px 4px;
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login a{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login{
+    padding: 10px 15px  ;
+    border-radius: 10%;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.login:hover{
+    background-color: #36aaaa;    
+    border: 3px solid rgb(0, 0, 0);
+    transition: 0.4s ease-in-out;
+}
+.login:hover a{
+    transition: 0.4s ease-in-out;
+    color: black;
+}
+.msg{
+    display: inline-block;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin-top: 38vh;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    /* border-radius: 20%; */
+    text-align: center;
+    z-index: 1;
+}
+.CA{
+    font-family: 'Audiowide', cursive;
+    font-size: 45px;
+}
+.tagline{
+    font-family: 'Audiowide', cursive;
+    color: #36aaaa;
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+}
+.register{
+    color: #ffffff;
+    background-color: rgb(0,0,0,0.6);
+    border: 2px solid rgb(54, 170, 170);
+    padding: 6px 20px;
+    font-size: 25px;
+    /* border-radius: 15px; */
+}
+.register:hover{
+    color: #36aaaa;
+    border: 2px solid #0c4141;
+    transition: 0.4s ease-in;
+}
+
+/* FORM CSS */
+.formcontainer{
+    background-image: url(background.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    /* margin: 5 !important; */
+    width: 98.7vw !important;
+    height: 600px;
+}
+.form{
+    margin: 30px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 0px 8px 5px rgba(54, 170, 170, 0.4);
+    width: 390px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    /* border: 2px solid #001313; */
+}
+input::placeholder{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.form input{
+    line-height: normal;
+    width: 350px;
+    background-color: rgba(48, 48, 48, 0.5);
+    color: white;
+    
+}
+label{
+    font-family: sans-serif;
+}
+#submit{
+    color: black;
+    font-size: larger;
+    font-family: sans-serif;
+    background-color: rgb(0, 152, 155);
+}
+#selectage{
+    width: 350px;
+    color: white;
+    background-color: rgba(48, 48, 48, 0.5);
+    text-align: center;
+    text-align-last: center;
+    font-family: sans-serif;
+    font-style: italic;
+    padding: 2px;
+}
+input:focus
+{
+    box-shadow: 0 0 3px #0c4141;
+    outline-offset: 0px;
+    outline: none;
+}
+label{
+    color: #3ab6b6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-self: baseline;
+}
+#selectage option { 
+    background-color: rgba(48, 48, 48);
+    color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.toggleform .toHide{
+    display: none;
+}
+.toggleform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.registerquestion #dont{
+display: block !important;
+}
+.registerquestion #already{
+    display: none !important;
+}
+
+/* COURSES CSS */
+.coursestitle{
+    text-align: center;
+    color: #3cb1b1;
+    font-size: 45px;
+    font-family:'Akaya Telivigala', cursive;
+}
+.courses{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    margin-top: -25px;
+    margin-left: 30px;
+    width: 1300px !important;
+    /* background-color: #36aaaa; */
+}
+.course{
+    width: 380px;
+    height: 440px;
+
+    /* border: 2px solid red; */
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.course .image img{
+    width: 340px;
+    height: 220px;
+    /* width: 340px;
+    height: 220px; */
+    border-radius: 20px;
+}
+.coursetitle{
+    text-align: center;
+    color: #39aaaa;
+    font-family: cursive;
+    font-size: x-large;
+}
+.courseinfo{
+    color: rgb(209, 209, 209);
+    padding: 10px;
+    text-align: justify;
+    font-family: serif;
+    font-size: large;
+}
+
+/* CONTACT US */
+.contact{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.icon{
+    font-size: 55px;
+    color: #39aaaa;
+}
+.icontitle{
+    font-weight: 900;
+    font-size: x-large;
+    font-family: cursive;
+}
+.icontext{
+    font-size: large;
+    font-family: sans-serif;
+}
+
+/* FOOTER */
+footer{
+    background-image: url(footer.jpg);
+    background-size: cover;
+    border-top-right-radius: 70px;
+    box-shadow: 0px 0px 5px 3px rgba(54, 170, 170, 0.4);
+    background-position: center;
+    color: white;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footercontent{
+    width: 400px;
+}
+.footercontainer{
+    padding: 40px;
+}
+.footertitle{
+    font-family:'Akaya Telivigala', cursive;
+    font-size: larger;
+    color: #4cdddd;
+}
+
+.footercontent ul li{
+    text-decoration: none;
+    list-style-type:none;
+}
+.footercontent ul li a{
+    color: white;
+}
+.linkicons{
+    border-top: 2px solid gray;
+    margin: 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    width: 200px;
+}
+.icons i:hover {
+    color: #36aaaa;
+    transition: 0.3s ease;
+}
