@@ -37,7 +37,7 @@
                 <li><a href="#" class="active">HOME</a></li>
             </ul>
             <ul>
-                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#footer">ABOUT US</a></li>
             </ul>
             <ul>
                 <li><a href="#contactus">CONTACT US</a></li>
@@ -46,7 +46,7 @@
                 <li><a href="#">OUR MISSION</a></li>
             </ul>
             <ul class="log" style="display: none;">
-                <li><a href="#">LOGIN</a></li>
+                <li><a href="#form">LOGIN</a></li>
             </ul>
         </div>
         <div class="login" id="login"><a href="#form"><i class="fa fa-fw fa-user"></i>LOG IN</a></div>
@@ -99,33 +99,25 @@
         <div class="course item">
             <div class="image"><img src="web_development1.PNG" alt=""></div>
             <div class="coursetitle">WEB DEVELOPMENT</div>
-            <div class="courseinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error labore facere totam
-                voluptatem sapiente necessitatibus saepe pariatur, est, atque doloribus obcaecati nulla, quaerat nisi
-                veniam possimus fuga delectus. Saepe, excepturi!</div>
+            <div class="courseinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione explicabo est enim eum, beatae nobis repellendus minus officiis iure ullam eos ut, in officia totam corporis cum quia aspernatur.</div>
         </div>
 
         <div class="course item">
             <div class="image"><img src="web_designing.PNG" alt=""></div>
             <div class="coursetitle">WEB DESIGNING</div>
-            <div class="courseinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error labore facere totam
-                voluptatem sapiente necessitatibus saepe pariatur, est, atque doloribus obcaecati nulla, quaerat nisi
-                veniam possimus fuga delectus. Saepe, excepturi!</div>
+            <div class="courseinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione explicabo est enim eum, beatae nobis repellendus minus officiis iure ullam eos ut, in officia totam corporis cum quia aspernatur.</div>
         </div>
 
         <div class="course item">
             <div class="image"><img src="back_end.PNG" alt=""></div>
             <div class="coursetitle">BACK END DEVELOPMENT</div>
-            <div class="courseinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error labore facere totam
-                voluptatem sapiente necessitatibus saepe pariatur, est, atque doloribus obcaecati nulla, quaerat nisi
-                veniam possimus fuga delectus. Saepe, excepturi!</div>
+            <div class="courseinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione explicabo est enim eum, beatae nobis repellendus minus officiis iure ullam eos ut, in officia totam corporis cum quia aspernatur.</div>
         </div>
 
         <div class="course item">
             <div class="image"><img src="apps_development.PNG" alt=""></div>
-            <div class="coursetitle">MOBILE APP DEVELOPMENT</div>
-            <div class="courseinfo">Lorem ipsum dolor sit amet ipsum consectetur adipisicing elit. Error labore facere
-                totam voluptatem sapiente necessitatibus saepe pariatur, est, atque doloribus obcaecati nulla, quaerat
-                nisi veniam possimus fuga delectus. Saepe, excepturi!</div>
+            <div class="coursetitle">APP DEVELOPMENT</div>
+            <div class="courseinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione explicabo est enim eum, beatae nobis repellendus minus officiis iure ullam eos ut, in officia totam corporis cum quia aspernatur.</div>
         </div>
     </div>
 
@@ -191,18 +183,18 @@
     </div>
     <br><br>
     <footer>
-        <div class="footer">
-            <div class="footercontainer" style="margin-left: 70px;">
+        <div class="footer" id="footer">
+            <div class="footercontainer about" >
                 <div class="footertitle">ABOUT</div>
-                <div class="footercontent" style="width: 600px; text-align: justify;" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aperiam
+                <div class="footercontent" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aperiam
                     aliquam ducimus error illum tempore nemo maiores, deleniti atque libero architecto velit eaque
                     accusantium unde hic, culpa exercitationem harum animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum excepturi eius error eum ad, cum rem, fuga praesentium.</div>
             </div>
 
-            <div class="footercontainer">
-                <div class="footertitle" style="margin-left: 30px;">QUICK LINKS</div>
+            <div class="footercontainer quicklinks">
+                <div class="footertitle">QUICK LINKS</div>
                 <div class="footercontent">
-                    <ul>
+                    <ul style="margin-left: -29px;">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Privacy Policy</a></li>
@@ -260,7 +252,7 @@
 
         $('.owl-carousel').owlCarousel({
             loop: true,
-            margin: 10,
+            // margin: 10,
             nav: true,
             navText: ["<i class='fa fa-angle-left' style='color:white;'></i>", "<i class='fa fa-angle-right' style='color:white;'></i>"],
             dots: false,
@@ -271,10 +263,10 @@
                 0: {
                     items: 1
                 },
-                925: {
-                    items: 3
+                600: {
+                    items: 2
                 },
-                1000: {
+                1050: {
                     items: 3
                 }
             }
