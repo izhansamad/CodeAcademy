@@ -4,53 +4,8 @@ body{
     box-sizing: border-box;
     /* background-color: rgb(0, 0, 0); */
     background: linear-gradient(to bottom, #000, rgb(29, 29, 29));
-}
-@media screen and (max-width:1250px)
-{
-    .navbar{
-        display: inline-block;
-        margin-left: 20px;
-        height: 475px;
-        width: 95vw;
-        transition: 1s all ease;
-        z-index: 2 !important;
-        /* position: absolut; */
-    }
-    .log{
-        display: block !important;
-    }
-    .navbar-items {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .login{
-    visibility: hidden;
-    }
-    #icon{
-        display: block !important;
-        right: 20px;
-        position: absolute;
-        top: 20px;
-        height: 40px; 
-        width: auto;
-    }
-    .courses{
-        width: 200px !important;
-        height: 550px;
-    }
-    .course{
-        width: 340px !important;
-        height: auto !important;
-        margin: 0 !important;
-    }
-    .course .image img{
-        /* width: 300px !important; */
-        height: 175px !important;
-    }
-    .owl-stage{
-        margin-top: 30px;
-    }
+    width: 100vw;
+    overflow-x: hidden;
 }
 .navbar.toggle{
     height: 80px;
@@ -170,7 +125,7 @@ a{
     display: flex;
     justify-content: center;
     /* margin: 5 !important; */
-    width: 98.7vw !important;
+    width: 100vw !important;
     height: 600px;
 }
 .form{
@@ -268,34 +223,40 @@ display: block !important;
     /* margin: 10px; */
     margin-top: -25px;
     margin-left: 30px;
-    width: 1300px !important;
+    width: 95vw !important;
+    height: auto !important;
     /* background-color: #36aaaa; */
 }
 .course{
-    width: 380px;
-    height: 440px;
-
+    /* width: 380px; */
+    margin-top: 20px !important;
+    width: 28vw;
+    height: max-content;
     /* border: 2px solid red; */
-    margin: 20px 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center !important;
+    margin-right: -10px !important;
 }
 .course .image img{
-    width: 340px;
+    width: 27vw !important;
     height: 220px;
     /* width: 340px;
     height: 220px; */
     border-radius: 20px;
 }
 .coursetitle{
+    font-size: 27vw;
+    width: 27vw;
     text-align: center;
     color: #39aaaa;
     font-family: cursive;
     font-size: x-large;
 }
 .courseinfo{
+    width: 28vw;
     color: rgb(209, 209, 209);
     padding: 10px;
     text-align: justify;
@@ -335,14 +296,23 @@ footer{
 
 }
 .footer{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "about about quicklinks";
     justify-content: space-between;
 }
-.footercontent{
-    width: 400px;
+.about{
+    grid-area: about;
+}
+.quicklinks{
+    grid-area: quicklinks;
 }
 .footercontainer{
-    padding: 40px;
+    padding: 30px 30px;
+}
+.footercontainer:first-child{
+    margin-left: 40px;
 }
 .footertitle{
     font-family:'Akaya Telivigala', cursive;
@@ -372,4 +342,74 @@ footer{
 .icons i:hover {
     color: #36aaaa;
     transition: 0.3s ease;
+}
+@media screen and (max-width:930px)
+{
+    .navbar{
+        display: inline-block;
+        margin-left: 20px;
+        height: 475px;
+        width: 95vw;
+        transition: 1s all ease;
+        z-index: 2 !important;
+        /* position: absolut; */
+    }
+    .log{
+        display: block !important;
+    }
+    .navbar-items {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .login{
+    visibility: hidden;
+    }
+    #icon{
+        display: block !important;
+        right: 20px;
+        position: absolute;
+        top: 20px;
+        height: 40px; 
+        width: auto;
+    }
+    .owl-stage{
+        margin-top: 30px;
+    } 
+}
+@media screen and (max-width:1050px)
+{
+    .course{
+        /* width: 380px; */
+        width: 42vw;
+        margin-top: 25px !important;
+    }
+    .course .image img{
+        width: 39vw !important;
+    }
+    .coursetitle{
+        font-size: 25px !important;
+        width: 41vw;
+    }
+    .courseinfo{
+        width: 40vw;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .course{
+        /* width: 380px; */
+        width: 80vw;
+        margin-top: 25px !important;
+    }
+    .course .image img{
+        width: 80vw !important;
+    }
+    .coursetitle{
+        font-size: 25px !important;
+        width: 80vw;
+    }
+    .courseinfo{
+        width: 80vw;
+    }
 }
